@@ -38,17 +38,15 @@ loading [content] into [window] requires [app] and [BrowserWindow] module
 
 import as [commonjs] modules
 
-[window] can only be created after [app] module's [ready-event]
+create [window] after app's [ready-event]
 
-to make [window] behave more [natively]
-
-use [process]'s global attribute [platform]
+use process's [platform] to make [window] behave more [natively]
 
 [steps:] how to implement [window-all-closed]
 
 [steps:] how to implement [activate]
 
-[document] is in a different [process]
+[document] is a different [process]
 
 attach [preload] script to run before [renderer] is loaded
 
@@ -60,9 +58,9 @@ as well as [node.js] environment ( [process] )
 
 fastest way to [distribute] is using [electron-forge]
 
-add [electron-forge] as a [development-dependency]
+add [electron-forge] as a development [dependency]
 
-use [import] command to set up [scaffolding]
+use [import] command to [scaffold]
 
 [steps:] setup [electron-forge]
 
@@ -74,5 +72,12 @@ change [architecture] using [--arc] flag
 
 specify the [platform] using [--platform] flag
 
-[steps]: when using [HTTP proxy]
+[steps:] when using [HTTP proxy]
+
+[steps:] download [binaries] using [mirrors] and [caches]
+
+[steps:] skip binary [download] when using [ci]
+
+[steps:] [troubleshoot] network [problems]
+
 
