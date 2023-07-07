@@ -80,4 +80,90 @@ specify the [platform] using [--platform] flag
 
 [steps:] [troubleshoot] network [problems]
 
+# Prerequisites
 
+how to [create] and [distribute]
+
+use [create-electron-app] command for [boilerplate]
+
+[electron] is a [wrapper] for [web] apps
+
+[electron] runs in [node.js] environment
+
+[steps]: required [tools]
+
+# Building your First app
+
+do not use windows [subsystem] for linux
+
+install [electron] as [devDependencies]
+
+[app] will come [bundled] with electron [binary]
+
+refer [github] for [gitignore] template
+
+[electron .] runs [main] script in [dev] mode
+
+[PascalCase] modules are [instantiable]
+
+[camelCase] modules are not [instantiable]
+
+ESM [import] is not [supported]
+
+prefer [app.whenReady()] over [app.on('ready')]
+
+each [web-page] will run in a separate [process] called [renderer]
+
+[renderer] have access to javascript [APIs]
+
+3 possible platforms: [win32], [linux] and [darwin]
+
+[steps:] setup [debugging] in [vscode]
+
+# Using Preload Scripts ---
+
+what is [preload] script
+
+how to securely expose [privileged-apis]
+
+how to [communicate] between [main] and [renderer] with [ipc] modules
+
+[main] process has full [system-access]
+
+includes electron [modules], node [built-ins], and npm [packages]
+
+[renderer] run web pages and do not run [node.js]
+
+[bridge] difference using [preload] script
+
+[preload] script has access to html [dom]
+
+and limited subset of [node.js] and electron [apis]
+
+[preload] script is [sand-boxed] since [v20]
+
+[refer:] table for available [apis] in [preload]
+
+[preload] script is [injected] before a web page loads in the [renderer]
+
+similar to [chrome] extensions's [content-scripts]
+
+to add privileged [access], define [global] objects through the [contextBridge] apis
+
+# Adding Features ---
+
+adding [complexity] to app [code]
+
+deeper [integration] with [os] and [node.js]
+
+# Packaging Your Application ---
+
+for [distributions], see forge's [makers] documentation
+
+for [icons], see forge's [icon] tutorial
+
+for [code-singing] see forge's [code-signing] documentation
+
+#  Publishing and Updating ---
+
+[refer:] this [documentation]
