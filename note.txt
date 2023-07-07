@@ -1,0 +1,78 @@
+# Introduction ---
+
+[electron] is a [framework] for building [desktop-applications]
+
+[electron] uses [javascript], [html], and [css]
+
+[electron] embeds [node.js] and [chromium] into its [binary]
+
+allows [one-codebase] and [cross-platform] apps
+
+# Quick Start ---
+
+version of [node.js] is unrelated to the [system] version
+
+[entry-point] should be [main.js]
+
+[author] and [description] are required for [packaging]
+
+[start] script [runs] app in [development] mode
+
+[entry-point] of any [electron] app is [main.js]
+
+[main.js] controls the [main-process]
+
+[main.js] runs in [node.js] environment
+
+[main.js] is responsible for [lifecycle], [interface], [privileged-operations], [renderer-process]
+
+[electron] looks for [main] in [package.json] during execution
+
+[window] displays [content] either from [file] or [url]
+
+loading [content] into [window] requires [app] and [BrowserWindow] module
+
+[app] controls [lifecycle]
+
+[BrowserWindow] controls [window]
+
+import as [commonjs] modules
+
+[window] can only be created after [app] module's [ready-event]
+
+to make [window] behave more [natively]
+
+use [process]'s global attribute [platform]
+
+[steps:] how to implement [window-all-closed]
+
+[steps:] how to implement [activate]
+
+[document] is in a different [process]
+
+attach [preload] script to run before [renderer] is loaded
+
+access to both [renderer] globals ( [window] and [document] )
+
+as well as [node.js] environment ( [process] )
+
+[steps:] configure [webPreferences.preload] option
+
+fastest way to [distribute] is using [electron-forge]
+
+add [electron-forge] as a [development-dependency]
+
+use [import] command to set up [scaffolding]
+
+[steps:] setup [electron-forge]
+
+# Advanced Installation Instructions ---
+
+running [electron] [ad-hoc]
+
+change [architecture] using [--arc] flag
+
+specify the [platform] using [--platform] flag
+
+[steps]: when using [HTTP proxy]
+
